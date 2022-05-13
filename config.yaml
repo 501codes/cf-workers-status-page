@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: Main Site # unique identifier
-    name: rhafener.com
+    name: Main Site
     url: 'https://rhafener.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -24,14 +24,14 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: Watch
-    name: watch.rhafener.com
+    name: Watch
     url: 'https://watch.rhafener.com/'
     method: GET
     expectStatus: 200
     linkable: false
     
   - id: Cloudflare
-    name: www.cloudflare.com
+    name: Cloudflare
     description: 'DNS and Hosting Provider.'
     url: 'https://www.cloudflare.com'
     method: GET
