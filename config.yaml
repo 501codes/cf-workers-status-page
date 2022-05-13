@@ -15,7 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: rhafener-com # unique identifier
+  - id: Main Site # unique identifier
     name: rhafener.com
     url: 'https://rhafener.com/' # URL to fetch
     method: GET # default=GET
@@ -23,13 +23,14 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: watch-rhafener-com
+  - id: Watch
     name: watch.rhafener.com
     url: 'https://watch.rhafener.com/'
     method: GET
     expectStatus: 200
+    linkable: false
     
-  - id: www-cloudflare-com
+  - id: Cloudflare
     name: www.cloudflare.com
     description: 'DNS and Hosting Provider.'
     url: 'https://www.cloudflare.com'
